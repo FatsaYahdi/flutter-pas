@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'package:galery/ui/home_page.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext content) {
+  Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'TravHomePage',
+      home: const HomePage(),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white, fontFamily: 'Poppins'),
     );
   }
 }
